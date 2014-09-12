@@ -1,0 +1,9 @@
+#!/bin/sh
+xrdb $HOME/.Xresources
+#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+export XKL_XMODMAP_DISABLE=1
+xrdb $HOME/.Xresources
+xsetroot -solid black
+firefox http://localhost:8080 &
+xfce4-session &
+
