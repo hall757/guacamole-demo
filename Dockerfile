@@ -11,7 +11,7 @@
 ### user-mapping.xml - Guacamole config.  User: demo Pass:demo
 
 FROM hall/guacamole
-MAINTAINER Randy Hall <randy.hall@open-source.guru>
+LABEL author="Randy Hall <randy.hall@open-source.guru>"
 
 ### Install a full desktop in the container
 RUN apt-get update &&\
